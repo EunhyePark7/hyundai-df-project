@@ -1086,16 +1086,14 @@
   }
   // 상품 - 슬라이드형
   &--slide {
-    .product__wrap {
-      overflow: hidden;
-      padding: 40px;
-      background-color: $grey-background;
-      border-radius: 16px;
-      @include respond-mobile {
-        padding: 0 0 0 20px;
-        background-color: #fff;
-        border-radius: 0;
-      }
+    overflow: hidden;
+    padding: 40px;
+    background-color: $grey-background;
+    border-radius: 16px;
+    @include respond-mobile {
+      padding: 0 0 0 20px;
+      background-color: #fff;
+      border-radius: 0;
     }
     .product__list {
       flex-wrap: nowrap;
