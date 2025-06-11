@@ -7,6 +7,7 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/scss/style.scss" />
   </head>
+
   <body>
     <!-- 헤더 -->
     <header class="header">
@@ -405,7 +406,11 @@
             </div>
 
             <!-- 모바일 전용 -->
-            <button type="button" class="section__btn-event mobile-only">
+            <button
+              type="button"
+              class="section__btn-event mobile-only"
+              data-action="popup-open:event"
+            >
               <span>더 많은 사은행사가 궁금하다면</span>
             </button>
           </div>
@@ -1749,6 +1754,219 @@
         </div>
       </div>
     </footer>
+
+    <!-- 팝업 - 사은행사 더보기 -->
+    <section class="popup popup--event" data-popup="event">
+      <div class="popup__container">
+        <div class="popup__header popup__header--search">
+          <h1 class="popup__title visually-hidden">사은행사 더보기</h1>
+
+          <!-- 검색 영역 - 뒤로가기+검색 -->
+          <div class="popup__search">
+            <button
+              type="button"
+              class="popup__btn-back"
+              data-action="popup-close:event"
+            >
+              <span class="visually-hidden">뒤로 가기</span>
+            </button>
+
+            <form class="popup__search-form" role="search">
+              <fieldset class="popup__search-fieldset">
+                <legend class="visually-hidden">브랜드 검색</legend>
+                <div class="popup__search-input">
+                  <input type="text" placeholder="브랜드명으로 검색해보세요" />
+                </div>
+                <button type="submit" class="popup__btn-search">
+                  <span class="visually-hidden">검색</span>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+
+          <!-- 필터 영역 -->
+          <div class="popup__filter">
+            <ul class="popup__filter-list">
+              <li class="popup__filter-item popup__filter-item--active">
+                <button type="button"><span>전체</span></button>
+              </li>
+              <li class="popup__filter-item">
+                <button type="button"><span>스킨케어</span></button>
+              </li>
+              <li class="popup__filter-item">
+                <button type="button"><span>메이크업</span></button>
+              </li>
+              <li class="popup__filter-item">
+                <button type="button"><span>향수/헤어/바디</span></button>
+              </li>
+              <li class="popup__filter-item">
+                <button type="button"><span>가방</span></button>
+              </li>
+              <li class="popup__filter-item">
+                <button type="button"><span>스킨케어</span></button>
+              </li>
+              <li class="popup__filter-item">
+                <button type="button"><span>메이크업</span></button>
+              </li>
+              <li class="popup__filter-item">
+                <button type="button"><span>향수/헤어/바디</span></button>
+              </li>
+              <li class="popup__filter-item">
+                <button type="button"><span>가방</span></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="popup__body">
+          <div class="popup__body-inner">
+            <ul class="popup__list popup__list--event">
+              <li class="popup__list-item">
+                <a class="popup__list-link" href="#" onclick="return false;">
+                  <div class="popup__list-img">
+                    <img
+                      src="/assets/images/event/event_product01.png"
+                      alt="아우구스티누스 바더"
+                    />
+                  </div>
+                  <div class="popup__list-info">
+                    <strong class="popup__list-title"
+                      >아우구스티누스 바더 단독 구매 사은 이벤트</strong
+                    >
+                    <p class="popup__list-decription">
+                      When purchaasing GLASS SKIN ESSENCE PACT, Heart Quilting
+                      Pouch Gift
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="popup__list-item">
+                <a class="popup__list-link" href="#" onclick="return false;">
+                  <div class="popup__list-img">
+                    <img
+                      src="/assets/images/event/event_product02.png"
+                      alt="블리브유"
+                    />
+                  </div>
+                  <div class="popup__list-info">
+                    <strong class="popup__list-title"
+                      >블리브유 신규입점 사은행사</strong
+                    >
+                    <p class="popup__list-decription">
+                      선착순 리뷰 이벤트 및 구매 금액별 사은행사
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="popup__list-item">
+                <a class="popup__list-link" href="#" onclick="return false;">
+                  <div class="popup__list-img">
+                    <img
+                      src="/assets/images/event/event_product03.png"
+                      alt="설화수"
+                    />
+                  </div>
+                  <div class="popup__list-info">
+                    <strong class="popup__list-title"
+                      >설화수 8월 사은행사</strong
+                    >
+                    <p class="popup__list-decription">구매고객 100% 사은증정</p>
+                  </div>
+                </a>
+              </li>
+              <li class="popup__list-item">
+                <a class="popup__list-link" href="#" onclick="return false;">
+                  <div class="popup__list-img">
+                    <img
+                      src="/assets/images/event/event_product04.png"
+                      alt="정관장"
+                    />
+                  </div>
+                  <div class="popup__list-info">
+                    <strong class="popup__list-title"
+                      >정관장 신상품 출시 기념 역대급 혜택</strong
+                    >
+                    <p class="popup__list-decription">
+                      신상품 출시 구매 사은행사
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="popup__list-item">
+                <a class="popup__list-link" href="#" onclick="return false;">
+                  <div class="popup__list-img">
+                    <img
+                      src="/assets/images/event/event_product01.png"
+                      alt="아우구스티누스 바더"
+                    />
+                  </div>
+                  <div class="popup__list-info">
+                    <strong class="popup__list-title"
+                      >아우구스티누스 바더 단독 구매 사은 이벤트</strong
+                    >
+                    <p class="popup__list-decription">
+                      When purchaasing GLASS SKIN ESSENCE PACT, Heart Quilting
+                      Pouch Gift
+                    </p>
+                  </div></a
+                >
+              </li>
+              <li class="popup__list-item">
+                <a class="popup__list-link" href="#" onclick="return false;">
+                  <div class="popup__list-img">
+                    <img
+                      src="/assets/images/event/event_product02.png"
+                      alt="블리브유"
+                    />
+                  </div>
+                  <div class="popup__list-info">
+                    <strong class="popup__list-title"
+                      >블리브유 신규입점 사은행사</strong
+                    >
+                    <p class="popup__list-decription">
+                      선착순 리뷰 이벤트 및 구매 금액별 사은행사
+                    </p>
+                  </div></a
+                >
+              </li>
+              <li class="popup__list-item">
+                <a class="popup__list-link" href="#" onclick="return false;">
+                  <div class="popup__list-img">
+                    <img
+                      src="/assets/images/event/event_product03.png"
+                      alt="설화수"
+                    />
+                  </div>
+                  <div class="popup__list-info">
+                    <strong class="popup__list-title"
+                      >설화수 8월 사은행사</strong
+                    >
+                    <p class="popup__list-decription">구매고객 100% 사은증정</p>
+                  </div></a
+                >
+              </li>
+              <li class="popup__list-item">
+                <a class="popup__list-link" href="#" onclick="return false;">
+                  <div class="popup__list-img">
+                    <img
+                      src="/assets/images/event/event_product04.png"
+                      alt="정관장"
+                    />
+                  </div>
+                  <div class="popup__list-info">
+                    <strong class="popup__list-title"
+                      >정관장 신상품 출시 기념 역대급 혜택</strong
+                    >
+                    <p class="popup__list-decription">
+                      신상품 출시 구매 사은행사
+                    </p>
+                  </div></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script type="module" src="/js/index.js"></script>
   </body>
