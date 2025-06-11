@@ -1,0 +1,37 @@
+{
+  "name": "publisher-task-template",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "eslint . --ext .js"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "Chrome >= 90",
+    "Safari >= 12",
+    "iOS >= 12",
+    "Edge >= 90"
+  ],
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^6.1.1",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "glob": "^11.0.2",
+    "postcss": "^8.4.27",
+    "postcss-custom-media": "^8.0.1",
+    "prettier": "^3.0.0",
+    "sass": "^1.66.1",
+    "swiper": "^9.3.2",
+    "vite": "^6.3.5",
+    "vite-jsconfig-paths": "^2.0.1"
+  }
+}

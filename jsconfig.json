@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"] // '@' 별칭을 'src' 폴더로 설정 (모듈 경로 참조 시 간단하게 사용 가능)
+    },
+    "checkJs": true
+  },
+  "include": ["src/**/*", "public/**/*"],
+  "exclude": ["node_modules", "**/node_modules", "dist"]
+}

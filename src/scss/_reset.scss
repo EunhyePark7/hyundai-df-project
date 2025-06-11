@@ -1,0 +1,144 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+article,
+aside,
+header,
+footer,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+html,
+body {
+  position: relative;
+  background-color: #fff;
+  color: $black-base;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: -0.05em;
+  scroll-behavior: smooth;
+  &:focus-within {
+    scroll-behavior: auto;
+  }
+}
+body {
+  overflow-x: hidden;
+  -webkit-text-size-adjust: none;
+  -webkit-overflow-scrolling: touch;
+}
+a {
+  color: $black-base;
+  background-color: transparent;
+  text-decoration: none;
+  &:active,
+  &:hover {
+    text-decoration: none;
+  }
+}
+button {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  background: transparent;
+  border: none;
+  box-sizing: border-box;
+  appearance: none;
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+}
+input::-webkit-search-cancel-button {
+  display: none;
+}
+input[type='search'] {
+  -moz-appearance: textfield;
+}
+input::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input::placeholder {
+  color: #abb2be !important;
+}
+dl,
+ul,
+ol,
+li,
+menu {
+  list-style: none;
+}
+img,
+svg,
+picture,
+video {
+  border: 0 none;
+  vertical-align: top;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+[tabindex='-1']:focus {
+  outline: none !important;
+}
+fieldset legend,
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+body.is-locked {
+  overflow: hidden;
+  touch-action: none;
+}

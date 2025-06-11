@@ -1,0 +1,109 @@
+@use './variables' as *;
+
+// 반응형 대응
+@mixin respond-mobile {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+/// 버튼
+/// @param {Color} $bg - 배경색
+/// @param {Color} $color - 텍스트 색상
+/// @param {String} $border - 보더 (기본: 1px solid #ebebeb)
+/// @param {Number} $radius - border-radius(px, 기본: 17)
+// +++ hover, active, focus-visible, disabled
+@mixin btn(
+  $bg: #fff,
+  $color: #5c6677,
+  $border: 1px solid #dde0e5,
+  $radius: 17px
+) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 34px;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: $bg;
+  color: $color;
+  border: $border;
+  border-radius: #{$radius};
+
+  @include respond-mobile {
+    height: 32px;
+    padding: 0 12px;
+  }
+}
+
+.btn {
+  @include btn(); // 기본값
+}
+.btn--default {
+  @include btn(#fff, #5c6677, 1px solid #dde0e5);
+}
+.btn--black {
+  @include btn(#1b1e23, #fff, 0);
+}
+
+/// 버튼 + 아이콘
+/// @param {String} $icon-url - 아이콘 이미지 경로
+/// @param {String} $position - 'left' | 'right' (기본: right)
+/// @param {Number} $width - 아이콘 너비
+/// @param {Number} $height - 아이콘 높이
+@mixin btn-icon($position: right, $icon-url, $width, $height) {
+  gap: 4px;
+  @if $position == right {
+    &::after {
+      content: '';
+      display: inline-block;
+      width: $width;
+      height: $height;
+      background: url(#{$icon-url}) center / 100% no-repeat;
+      flex-shrink: 0;
+    }
+  } @else if $position == left {
+    &::before {
+      content: '';
+      display: inline-block;
+      width: $width;
+      height: $height;
+      background: url(#{$icon-url}) center / 100% no-repeat;
+      flex-shrink: 0;
+    }
+  }
+}
+// 버튼 + 아이콘 믹스인 - 사용예시
+.btn-icon {
+  @include btn-icon(
+    right,
+    '@/assets/images/icons/ic-m-arrow-right.png',
+    16px,
+    16px
+  );
+}
+
+/// 아이콘 버튼
+/// @param {Number} $width - 버튼 너비
+/// @param {Number} $height - 버튼 높이
+/// @param {String} $icon-url - 배경 이미지 URL
+/// @param {String} $bg-size - background-size (기본값 20px 20px)
+// +++ hover, active, focus-visible, disabled
+@mixin btn-icon-only($width, $height, $icon-url, $bg-size: 20px 20px) {
+  display: inline-flex;
+  width: #{$width};
+  height: #{$height};
+  background: url(#{$icon-url}) center / #{$bg-size} no-repeat;
+}
+
+// 아이콘 버튼 믹스인 - 사용예시
+// .btn-close {
+//   @include btn-icon-only(
+//     24px,
+//     24px,
+//     '@/assets/images/icons/icon_close.png',
+//     24px 24px
+//   );
+// }
