@@ -5,5 +5,5 @@
   "tabWidth": 2,
   "trailingComma": "none",
   "plugins": ["prettier-plugin-organize-attributes"],
-  "attributeGroups": ["^class$", "^(id|name)$", "$DEFAULT", "^aria-", "loading"]
+  "attributeGroups": ["^class$", "id", "name", "$DEFAULT", "^aria-", "loading"]
 }

@@ -534,7 +534,13 @@
 
 // 섹션 네비
 .section-nav {
+  position: sticky;
+  top: 121px;
+  left: 0;
+  right: 0;
   margin-bottom: 80px;
+  background-color: #fff;
+  z-index: 100;
   @include respond-mobile {
     width: 100%;
     padding: 0 20px;
@@ -555,7 +561,7 @@
     flex: 1;
     text-align: center;
     border-bottom: 2px solid transparent;
-    &.is-active {
+    &--active {
       border-color: $black-base;
       .section-nav__link {
         font-weight: 700;
@@ -1085,7 +1091,7 @@
     }
   }
   // 상품 - 슬라이드형
-  &--slide {
+  &.product--slide {
     overflow: hidden;
     padding: 40px;
     background-color: $grey-background;
@@ -1133,7 +1139,7 @@
     }
   }
   // 상품 - 간결형
-  &--compact {
+  &.product--compact {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -1171,7 +1177,10 @@
     }
   }
   // 상품 - 간결형 + 슬라이드형
-  &--compact.product--slide {
+  &.product--compact.product--slide {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
     .product__list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);

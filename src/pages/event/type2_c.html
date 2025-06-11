@@ -270,8 +270,8 @@
           <div class="event__visual-box">
             <img
               class="event__visual"
-              src="/assets/images/event/event_type2a_visual.png"
               aria-hidden="true"
+              src="/assets/images/event/event_type2a_visual.png"
               loading="lazy"
             />
           </div>
@@ -280,20 +280,36 @@
         <!-- 섹션 네비 -->
         <nav class="section-nav" aria-label="이벤트 상품 카테고리">
           <ul class="section-nav__list">
-            <li class="section-nav__item is-active">
-              <a class="section-nav__link" href="#section1">사은행사</a>
+            <li
+              class="section-nav__item section-nav__item--active"
+              data-nav-target="section-event"
+            >
+              <a class="section-nav__link" href="#" onclick="return false;"
+                >사은행사</a
+              >
             </li>
-            <li class="section-nav__item">
-              <a class="section-nav__link" href="#section2">추천상품</a>
+            <li
+              class="section-nav__item"
+              data-nav-target="section-product-recommend"
+            >
+              <a class="section-nav__link" href="#" onclick="return false;"
+                >추천상품</a
+              >
             </li>
-            <li class="section-nav__item">
-              <a class="section-nav__link" href="#section3">전체상품</a>
+            <li class="section-nav__item" data-nav-target="section-product-all">
+              <a class="section-nav__link" href="#" onclick="return false;"
+                >전체상품</a
+              >
             </li>
           </ul>
         </nav>
 
         <!-- 사은행사 -->
-        <section class="section section--event" id="section1">
+        <section
+          class="section section--event"
+          id="section-event"
+          data-scroll-section="section-event"
+        >
           <!-- 이벤트1 -->
           <div class="section__group">
             <div class="section__heading">
@@ -775,7 +791,11 @@
         </section>
 
         <!-- 추천상품 -->
-        <section class="section section--product" id="section2">
+        <section
+          class="section section--product"
+          id="section-product-recommend"
+          data-scroll-section="section-product-recommend"
+        >
           <div class="section__group">
             <h3 class="section__title">추천상품</h3>
 
@@ -1252,7 +1272,11 @@
         </section>
 
         <!-- 전체상품 -->
-        <section class="section section--product" id="section3">
+        <section
+          class="section section--product"
+          id="section-product-all"
+          data-scroll-section="section-product-all"
+        >
           <!-- <h3 class="section__title">전체상품</h3> -->
 
           <!-- 상품 필터 -->
@@ -1292,8 +1316,8 @@
                 <div class="product-filter__select">
                   <select
                     class="product-filter__dropdown"
-                    name="option1"
                     id="option1"
+                    name="option1"
                   >
                     <option value="best">베스트순</option>
                     <option value="new">신상품순</option>

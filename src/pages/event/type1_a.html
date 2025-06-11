@@ -265,9 +265,9 @@
           <div class="event__visual-box">
             <img
               class="event__visual"
+              aria-hidden="true"
               src="/assets/images/event/event_type1a_visual.png"
               alt="상품이미지"
-              aria-hidden="true"
               loading="lazy"
             />
           </div>
@@ -276,20 +276,36 @@
         <!-- 섹션 네비 -->
         <nav class="section-nav" aria-label="이벤트 상품 카테고리">
           <ul class="section-nav__list">
-            <li class="section-nav__item is-active">
-              <a class="section-nav__link" href="#section1">사은행사</a>
+            <li
+              class="section-nav__item section-nav__item--active"
+              data-nav-target="section-event"
+            >
+              <a class="section-nav__link" href="#" onclick="return false;"
+                >사은행사</a
+              >
             </li>
-            <li class="section-nav__item">
-              <a class="section-nav__link" href="#section2">추천상품</a>
+            <li
+              class="section-nav__item"
+              data-nav-target="section-product-recommend"
+            >
+              <a class="section-nav__link" href="#" onclick="return false;"
+                >추천상품</a
+              >
             </li>
-            <li class="section-nav__item">
-              <a class="section-nav__link" href="#section3">전체상품</a>
+            <li class="section-nav__item" data-nav-target="section-product-all">
+              <a class="section-nav__link" href="#" onclick="return false;"
+                >전체상품</a
+              >
             </li>
           </ul>
         </nav>
 
         <!-- 사은행사 -->
-        <section class="section section--event" id="section1">
+        <section
+          class="section section--event"
+          id="section-event"
+          data-scroll-section="section-event"
+        >
           <!-- 섹션 타이틀 -->
           <div class="section__heading">
             <h2 class="section__title">현대면세점 EXCLUSIVE 혜택</h2>
@@ -448,14 +464,19 @@
         </section>
 
         <!-- 추천상품 -->
-        <section class="section section--product" id="section2">
+        <section
+          class="section section--product"
+          id="section-product-recommend"
+          data-scroll-section="section-product-recommend"
+        >
           <div class="section__group">
             <h3 class="section__title">추천상품</h3>
+
             <!-- 상품 슬라이드 -->
             <div class="product product--slide swiper">
               <div class="product__wrap">
-                <ul class="product__list swiper-wrapper">
-                  <li class="product__item swiper-slide">
+                <ul class="product__list">
+                  <li class="product__item">
                     <a class="product__link" href="#" onclick="return false;">
                       <div class="product__img">
                         <img
@@ -482,7 +503,7 @@
                       </div>
                     </a>
                   </li>
-                  <li class="product__item swiper-slide">
+                  <li class="product__item">
                     <a class="product__link" href="#" onclick="return false;">
                       <div class="product__img">
                         <img
@@ -509,7 +530,7 @@
                       </div>
                     </a>
                   </li>
-                  <li class="product__item swiper-slide">
+                  <li class="product__item">
                     <a class="product__link" href="#" onclick="return false;">
                       <div class="product__img">
                         <img
@@ -536,7 +557,7 @@
                       </div>
                     </a>
                   </li>
-                  <li class="product__item swiper-slide">
+                  <li class="product__item">
                     <a class="product__link" href="#" onclick="return false;">
                       <div class="product__img">
                         <img
@@ -563,7 +584,7 @@
                       </div>
                     </a>
                   </li>
-                  <li class="product__item swiper-slide">
+                  <li class="product__item">
                     <a class="product__link" href="#" onclick="return false;">
                       <div class="product__img">
                         <img
@@ -590,7 +611,7 @@
                       </div>
                     </a>
                   </li>
-                  <li class="product__item swiper-slide">
+                  <li class="product__item">
                     <a class="product__link" href="#" onclick="return false;">
                       <div class="product__img">
                         <img
@@ -617,7 +638,7 @@
                       </div>
                     </a>
                   </li>
-                  <li class="product__item swiper-slide">
+                  <li class="product__item">
                     <a class="product__link" href="#" onclick="return false;">
                       <div class="product__img">
                         <img
@@ -644,7 +665,7 @@
                       </div>
                     </a>
                   </li>
-                  <li class="product__item swiper-slide">
+                  <li class="product__item">
                     <a class="product__link" href="#" onclick="return false;">
                       <div class="product__img">
                         <img
@@ -672,9 +693,6 @@
                     </a>
                   </li>
                 </ul>
-                <!-- 네비게이션 버튼 -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
               </div>
             </div>
           </div>
@@ -698,9 +716,8 @@
 
             <div class="section__bg--box">
               <h3 class="section__title">이런 상품은 어떠세요?</h3>
-
               <!-- 상품 슬라이드 -->
-              <div class="product product--slide">
+              <div class="product product--slide swiper">
                 <div class="product__wrap">
                   <ul class="product__list">
                     <li class="product__item">
@@ -927,7 +944,11 @@
         </section>
 
         <!-- 전체상품 -->
-        <section class="section section--product" id="section3">
+        <section
+          class="section section--product"
+          id="section-product-all"
+          data-scroll-section="section-product-all"
+        >
           <!-- 상품 필터 -->
           <div class="product-filter">
             <div class="product-filter__section product-filter__section--left">
@@ -950,8 +971,7 @@
               >
                 <div class="toggle-switch">
                   <label class="toggle-switch__label">
-                    <span class="toggle-switch__text pc-only">품절제외</span>
-                    <span class="toggle-switch__text mobile-only">품절</span>
+                    <span class="toggle-switch__text">품절제외</span>
                     <input
                       class="toggle-switch__input"
                       id="toggle1"
@@ -995,7 +1015,7 @@
             </div>
           </div>
 
-          <!-- 상품 슬라이드 -->
+          <!-- 상품 리스트 -->
           <div class="product product--list">
             <ul class="product__list">
               <li class="product__item">
