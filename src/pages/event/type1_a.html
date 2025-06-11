@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="현대 면세점 과제 Event type1 A" />
+    <meta
+      name="description"
+      content="박은혜 현대 면세점 과제 : Event type1 A template markup"
+    />
     <title>현대면세점 과제</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/scss/style.scss" />
@@ -18,46 +23,53 @@
             <!-- 언어 선택 -->
             <div class="header__lang">
               <button class="header__lang-btn" type="button">
-                <span class="visually-hidden">언어 설정</span>한국어
+                <span class="visually-hidden">언어 설정</span>
+                한국어
               </button>
               <ul class="header__lang-list">
                 <li class="header__lang-item is-active">
-                  <a href="javascript:;" lang="ko">한국어</a>
+                  <a href="#" onclick="return false;" lang="ko">한국어</a>
                 </li>
                 <li class="header__lang-item">
-                  <a href="javascript:;" lang="zh">简体中文</a>
+                  <a href="#" onclick="return false;" lang="zh">简体中文</a>
                 </li>
                 <li class="header__lang-item">
-                  <a href="javascript:;" lang="en">English</a>
+                  <a href="#" onclick="return false;" lang="en">English</a>
                 </li>
               </ul>
             </div>
 
             <!-- 환율 정보 -->
-            <a href="javascript:;" class="header__exchange">$1 = 1373.8원</a>
+            <a class="header__exchange" href="#" onclick="return false;">
+              $1 = 1373.8원
+            </a>
           </div>
 
           <!-- 서포트 메뉴 -->
           <div class="header__support">
-            <a href="javascript:;">로그아웃</a>
-            <a href="javascript:;">고객센터</a>
-            <a href="javascript:;">지점안내</a>
-            <a href="javascript:;">주문가능시간</a>
+            <a href="#" onclick="return false;">로그아웃</a>
+            <a href="#" onclick="return false;">고객센터</a>
+            <a href="#" onclick="return false;">지점안내</a>
+            <a href="#" onclick="return false;">주문가능시간</a>
           </div>
         </div>
 
         <!-- 헤더 메인 -->
         <div class="header__main">
           <!-- gnb 버튼 -->
-          <button type="button" class="header__gnb-btn">
+          <button class="header__gnb-btn" type="button">
             <span class="visually-hidden">메뉴 열기</span>
           </button>
 
           <!-- 로고 -->
           <h1 class="header__logo">
-            <a href="javascript:;"
-              ><img src="/assets/images/logo.png" alt="HYUNDAI DUTY FREE"
-            /></a>
+            <a href="#" onclick="return false;">
+              <img
+                src="/assets/images/logo.png"
+                alt="HYUNDAI DUTY FREE"
+                loading="lazy"
+              />
+            </a>
           </h1>
 
           <!-- 검색 -->
@@ -66,7 +78,7 @@
               <fieldset>
                 <legend>통합 검색</legend>
                 <div class="header__search-type">
-                  <button type="button" class="is-active">
+                  <button class="is-active" type="button">
                     <span class="visually-hidden">해시태그 검색</span>
                   </button>
                   <button type="button">
@@ -85,32 +97,40 @@
 
           <!-- 빠른 기능 -->
           <div class="header__action">
-            <a href="javascript:;" class="header__action--cart"
-              ><span class="visually-hidden">장바구니</span></a
+            <a class="header__action--cart" href="#" onclick="return false;">
+              <span class="visually-hidden">장바구니</span>
+            </a>
+            <a class="header__action--mypage" href="#" onclick="return false;">
+              <span class="visually-hidden">마이현대</span>
+            </a>
+            <a
+              class="header__action--curation"
+              href="#"
+              onclick="return false;"
             >
-            <a href="javascript:;" class="header__action--mypage"
-              ><span class="visually-hidden">마이현대</span></a
-            >
-            <a href="javascript:;" class="header__action--curation"
-              ><span class="visually-hidden">큐레이션</span></a
-            >
+              <span class="visually-hidden">큐레이션</span>
+            </a>
           </div>
         </div>
       </div>
 
       <!-- 헤더 - 모바일 -->
       <div class="header-mobile mobile-only">
-        <button type="button" class="header-mobile__btn-back">
+        <button class="header-mobile__btn-back" type="button">
           <span class="visually-hidden">뒤로가기</span>
         </button>
         <h2 class="header-mobile__title">사은 행사</h2>
         <div class="header-mobile__action">
-          <button type="button" class="header-mobile__action--search">
+          <button class="header-mobile__action--search" type="button">
             <span class="visually-hidden">검색</span>
           </button>
-          <a href="javascript:;" class="header-mobile__action--cart"
-            ><span class="visually-hidden">장바구니</span></a
+          <a
+            class="header-mobile__action--cart"
+            href="#"
+            onclick="return false;"
           >
+            <span class="visually-hidden">장바구니</span>
+          </a>
         </div>
       </div>
     </header>
@@ -125,10 +145,14 @@
           aria-label="현재 위치"
         >
           <ol class="breadcrumb__list">
-            <li class="breadcrumb__item"><a href="javascript:;">홈</a></li>
-            <li class="breadcrumb__item"><a href="javascript:;">기획전</a></li>
             <li class="breadcrumb__item">
-              <a href="javascript:;">사은행사</a>
+              <a href="#" onclick="return false;">홈</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a href="#" onclick="return false;">기획전</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a href="#" onclick="return false;">사은행사</a>
             </li>
             <li class="breadcrumb__item" aria-current="page">
               아이오페 단독 프로모션
@@ -138,10 +162,10 @@
           <!-- 사은행사 드롭다운 리스트 -->
           <div class="breadcrumb__dropdown">
             <button
-              type="button"
               class="breadcrumb__dropdown-btn"
-              aria-expanded="false"
+              type="button"
               data-action="dropdown-toggle:breadcrumb"
+              aria-expanded="false"
             >
               <span class="visually-hidden">다른 사은행사 보기</span>
             </button>
@@ -152,58 +176,58 @@
                     <a href="type1_a.html">아이오페 단독 프로모션</a>
                   </li>
                   <li class="breadcrumb__dropdown-item" role="option">
-                    <a href="type1_b.html"
-                      >정관장 신상품 출시 기념 역대급 혜택</a
-                    >
+                    <a href="type1_b.html">
+                      정관장 신상품 출시 기념 역대급 혜택
+                    </a>
                   </li>
                   <li class="breadcrumb__dropdown-item" role="option">
-                    <a href="type2_a.html"
-                      >라네즈 외 7개 브랜드 햇살 가림 상품 기획전
+                    <a href="type2_a.html">
+                      라네즈 외 7개 브랜드 햇살 가림 상품 기획전
                     </a>
                   </li>
                   <li class="breadcrumb__dropdown-item" role="option">
                     <a href="type2_b.html">풀리오 최강 마사지 조합</a>
                   </li>
                   <li class="breadcrumb__dropdown-item" role="option">
-                    <a href="type2_c.html"
-                      >라네즈 외 7개 브랜드 세트 상품 할인 기획전</a
-                    >
+                    <a href="type2_c.html">
+                      라네즈 외 7개 브랜드 세트 상품 할인 기획전
+                    </a>
                   </li>
                   <li class="breadcrumb__dropdown-item" role="option">
-                    <a href="type1_b.html"
-                      >정관장 신상품 출시 기념 역대급 혜택</a
-                    >
+                    <a href="type1_b.html">
+                      정관장 신상품 출시 기념 역대급 혜택
+                    </a>
                   </li>
                   <li class="breadcrumb__dropdown-item" role="option">
-                    <a href="type2_a.html"
-                      >라네즈 외 7개 브랜드 햇살 가림 상품 기획전
+                    <a href="type2_a.html">
+                      라네즈 외 7개 브랜드 햇살 가림 상품 기획전
                     </a>
                   </li>
                   <li class="breadcrumb__dropdown-item" role="option">
                     <a href="type2_b.html">풀리오 최강 마사지 조합</a>
                   </li>
                   <li class="breadcrumb__dropdown-item" role="option">
-                    <a href="type2_c.html"
-                      >라네즈 외 7개 브랜드 세트 상품 할인 기획전</a
-                    >
+                    <a href="type2_c.html">
+                      라네즈 외 7개 브랜드 세트 상품 할인 기획전
+                    </a>
                   </li>
                   <li class="breadcrumb__dropdown-item" role="option">
-                    <a href="type1_b.html"
-                      >정관장 신상품 출시 기념 역대급 혜택</a
-                    >
+                    <a href="type1_b.html">
+                      정관장 신상품 출시 기념 역대급 혜택
+                    </a>
                   </li>
                   <li class="breadcrumb__dropdown-item" role="option">
-                    <a href="type2_a.html"
-                      >라네즈 외 7개 브랜드 햇살 가림 상품 기획전
+                    <a href="type2_a.html">
+                      라네즈 외 7개 브랜드 햇살 가림 상품 기획전
                     </a>
                   </li>
                   <li class="breadcrumb__dropdown-item" role="option">
                     <a href="type2_b.html">풀리오 최강 마사지 조합</a>
                   </li>
                   <li class="breadcrumb__dropdown-item" role="option">
-                    <a href="type2_c.html"
-                      >라네즈 외 7개 브랜드 세트 상품 할인 기획전</a
-                    >
+                    <a href="type2_c.html">
+                      라네즈 외 7개 브랜드 세트 상품 할인 기획전
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -214,18 +238,18 @@
         <!-- 관심이벤트/공유하기 -->
         <div class="page-head__action">
           <button
-            type="button"
             class="action-btn action-btn--favorite"
+            type="button"
             aria-label="관심이벤트 추가"
           ></button>
           <button
-            type="button"
             class="action-btn action-btn--facebook"
+            type="button"
             aria-label="페이스북에 공유하기"
           ></button>
           <button
-            type="button"
             class="action-btn action-btn--blog"
+            type="button"
             aria-label="네이버블로그에 공유하기"
           ></button>
         </div>
@@ -242,7 +266,9 @@
             <img
               class="event__visual"
               src="/assets/images/event/event_type1a_visual.png"
+              alt="상품이미지"
               aria-hidden="true"
+              loading="lazy"
             />
           </div>
         </section>
@@ -251,19 +277,19 @@
         <nav class="section-nav" aria-label="이벤트 상품 카테고리">
           <ul class="section-nav__list">
             <li class="section-nav__item is-active">
-              <a href="#section1" class="section-nav__link">사은행사</a>
+              <a class="section-nav__link" href="#section1">사은행사</a>
             </li>
             <li class="section-nav__item">
-              <a href="#section2" class="section-nav__link">추천상품</a>
+              <a class="section-nav__link" href="#section2">추천상품</a>
             </li>
             <li class="section-nav__item">
-              <a href="#section3" class="section-nav__link">전체상품</a>
+              <a class="section-nav__link" href="#section3">전체상품</a>
             </li>
           </ul>
         </nav>
 
         <!-- 사은행사 -->
-        <section id="section1" class="section section--event">
+        <section class="section section--event" id="section1">
           <!-- 섹션 타이틀 -->
           <div class="section__heading">
             <h2 class="section__title">현대면세점 EXCLUSIVE 혜택</h2>
@@ -287,11 +313,12 @@
                 <span class="benefit__label">Gift</span>
                 <ul class="benefit__list">
                   <li class="benefit__item">
-                    <a href="javascrip:;" class="benefit__link">
+                    <a class="benefit__link" href="javascrip:;">
                       <img
+                        class="benefit__img"
                         src="/assets/images/event/event_type1a_product01.png"
                         alt="상품이미지"
-                        class="benefit__img"
+                        loading="lazy"
                       />
                       <div class="benefit__info">
                         <strong class="benefit__detail">$60이상 구매시</strong>
@@ -319,11 +346,12 @@
                 <span class="benefit__label">Gift</span>
                 <ul class="benefit__list">
                   <li class="benefit__item">
-                    <a href="javascrip:;" class="benefit__link">
+                    <a class="benefit__link" href="javascrip:;">
                       <img
+                        class="benefit__img"
                         src="/assets/images/event/event_type1a_product02.png"
                         alt="상품이미지"
-                        class="benefit__img"
+                        loading="lazy"
                       />
                       <div class="benefit__info">
                         <strong class="benefit__detail">$1이상 구매시</strong>
@@ -334,11 +362,12 @@
                     </a>
                   </li>
                   <li class="benefit__item">
-                    <a href="javascrip:;" class="benefit__link">
+                    <a class="benefit__link" href="javascrip:;">
                       <img
+                        class="benefit__img"
                         src="/assets/images/event/event_type1a_product03.png"
                         alt="상품이미지"
-                        class="benefit__img"
+                        loading="lazy"
                       />
                       <div class="benefit__info">
                         <strong class="benefit__detail">$50이상 구매시</strong>
@@ -349,11 +378,12 @@
                     </a>
                   </li>
                   <li class="benefit__item">
-                    <a href="javascrip:;" class="benefit__link">
+                    <a class="benefit__link" href="javascrip:;">
                       <img
+                        class="benefit__img"
                         src="/assets/images/event/event_type1a_product04.png"
                         alt="상품이미지"
-                        class="benefit__img"
+                        loading="lazy"
                       />
                       <div class="benefit__info">
                         <strong class="benefit__detail">$80이상 구매시</strong>
@@ -371,11 +401,12 @@
             <!-- 브랜드 리스트 -->
             <div class="brand">
               <div class="brand__list">
-                <a href="javascript:;" class="brand__item">
+                <a class="brand__item" href="#" onclick="return false;">
                   <img
+                    class="brand__img"
                     src="/assets/images/event/event_type1a_brand.png"
                     alt="브랜드이미지"
-                    class="brand__img"
+                    loading="lazy"
                   />
                   <span class="brand__name">아이오페</span>
                 </a>
@@ -407,8 +438,8 @@
 
             <!-- 모바일 전용 -->
             <button
-              type="button"
               class="section__btn-event mobile-only"
+              type="button"
               data-action="popup-open:event"
             >
               <span>더 많은 사은행사가 궁금하다면</span>
@@ -417,22 +448,22 @@
         </section>
 
         <!-- 추천상품 -->
-        <section id="section2" class="section section--product">
+        <section class="section section--product" id="section2">
           <div class="section__group">
             <h3 class="section__title">추천상품</h3>
-
             <!-- 상품 슬라이드 -->
             <div class="product product--slide swiper">
               <div class="product__wrap">
                 <ul class="product__list swiper-wrapper">
                   <li class="product__item swiper-slide">
-                    <a href="javascript:;" class="product__link">
+                    <a class="product__link" href="#" onclick="return false;">
                       <div class="product__img">
                         <img
                           src="/assets/images/event/product_01.png"
                           alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                          loading="lazy"
                         />
-                        <button type="button" class="product__btn-cart">
+                        <button class="product__btn-cart" type="button">
                           <span class="visually-hidden">장바구니</span>
                         </button>
                       </div>
@@ -452,13 +483,14 @@
                     </a>
                   </li>
                   <li class="product__item swiper-slide">
-                    <a href="javascript:;" class="product__link">
+                    <a class="product__link" href="#" onclick="return false;">
                       <div class="product__img">
                         <img
                           src="/assets/images/event/product_02.png"
                           alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                          loading="lazy"
                         />
-                        <button type="button" class="product__btn-cart">
+                        <button class="product__btn-cart" type="button">
                           <span class="visually-hidden">장바구니</span>
                         </button>
                       </div>
@@ -478,13 +510,14 @@
                     </a>
                   </li>
                   <li class="product__item swiper-slide">
-                    <a href="javascript:;" class="product__link">
+                    <a class="product__link" href="#" onclick="return false;">
                       <div class="product__img">
                         <img
                           src="/assets/images/event/product_03.png"
                           alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                          loading="lazy"
                         />
-                        <button type="button" class="product__btn-cart">
+                        <button class="product__btn-cart" type="button">
                           <span class="visually-hidden">장바구니</span>
                         </button>
                       </div>
@@ -504,13 +537,14 @@
                     </a>
                   </li>
                   <li class="product__item swiper-slide">
-                    <a href="javascript:;" class="product__link">
+                    <a class="product__link" href="#" onclick="return false;">
                       <div class="product__img">
                         <img
                           src="/assets/images/event/product_01.png"
                           alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                          loading="lazy"
                         />
-                        <button type="button" class="product__btn-cart">
+                        <button class="product__btn-cart" type="button">
                           <span class="visually-hidden">장바구니</span>
                         </button>
                       </div>
@@ -530,13 +564,14 @@
                     </a>
                   </li>
                   <li class="product__item swiper-slide">
-                    <a href="javascript:;" class="product__link">
+                    <a class="product__link" href="#" onclick="return false;">
                       <div class="product__img">
                         <img
                           src="/assets/images/event/product_01.png"
                           alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                          loading="lazy"
                         />
-                        <button type="button" class="product__btn-cart">
+                        <button class="product__btn-cart" type="button">
                           <span class="visually-hidden">장바구니</span>
                         </button>
                       </div>
@@ -556,13 +591,14 @@
                     </a>
                   </li>
                   <li class="product__item swiper-slide">
-                    <a href="javascript:;" class="product__link">
+                    <a class="product__link" href="#" onclick="return false;">
                       <div class="product__img">
                         <img
                           src="/assets/images/event/product_02.png"
                           alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                          loading="lazy"
                         />
-                        <button type="button" class="product__btn-cart">
+                        <button class="product__btn-cart" type="button">
                           <span class="visually-hidden">장바구니</span>
                         </button>
                       </div>
@@ -582,13 +618,14 @@
                     </a>
                   </li>
                   <li class="product__item swiper-slide">
-                    <a href="javascript:;" class="product__link">
+                    <a class="product__link" href="#" onclick="return false;">
                       <div class="product__img">
                         <img
                           src="/assets/images/event/product_03.png"
                           alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                          loading="lazy"
                         />
-                        <button type="button" class="product__btn-cart">
+                        <button class="product__btn-cart" type="button">
                           <span class="visually-hidden">장바구니</span>
                         </button>
                       </div>
@@ -608,13 +645,14 @@
                     </a>
                   </li>
                   <li class="product__item swiper-slide">
-                    <a href="javascript:;" class="product__link">
+                    <a class="product__link" href="#" onclick="return false;">
                       <div class="product__img">
                         <img
                           src="/assets/images/event/product_01.png"
                           alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                          loading="lazy"
                         />
-                        <button type="button" class="product__btn-cart">
+                        <button class="product__btn-cart" type="button">
                           <span class="visually-hidden">장바구니</span>
                         </button>
                       </div>
@@ -634,10 +672,10 @@
                     </a>
                   </li>
                 </ul>
+                <!-- 네비게이션 버튼 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
-              <!-- 네비게이션 버튼 -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
             </div>
           </div>
 
@@ -666,13 +704,14 @@
                 <div class="product__wrap">
                   <ul class="product__list">
                     <li class="product__item">
-                      <a href="javascript:;" class="product__link">
+                      <a class="product__link" href="#" onclick="return false;">
                         <div class="product__img">
                           <img
                             src="/assets/images/event/product_01.png"
                             alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                            loading="lazy"
                           />
-                          <button type="button" class="product__btn-cart">
+                          <button class="product__btn-cart" type="button">
                             <span class="visually-hidden">장바구니</span>
                           </button>
                         </div>
@@ -692,13 +731,14 @@
                       </a>
                     </li>
                     <li class="product__item">
-                      <a href="javascript:;" class="product__link">
+                      <a class="product__link" href="#" onclick="return false;">
                         <div class="product__img">
                           <img
                             src="/assets/images/event/product_02.png"
                             alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                            loading="lazy"
                           />
-                          <button type="button" class="product__btn-cart">
+                          <button class="product__btn-cart" type="button">
                             <span class="visually-hidden">장바구니</span>
                           </button>
                         </div>
@@ -718,13 +758,14 @@
                       </a>
                     </li>
                     <li class="product__item">
-                      <a href="javascript:;" class="product__link">
+                      <a class="product__link" href="#" onclick="return false;">
                         <div class="product__img">
                           <img
                             src="/assets/images/event/product_03.png"
                             alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                            loading="lazy"
                           />
-                          <button type="button" class="product__btn-cart">
+                          <button class="product__btn-cart" type="button">
                             <span class="visually-hidden">장바구니</span>
                           </button>
                         </div>
@@ -744,13 +785,14 @@
                       </a>
                     </li>
                     <li class="product__item">
-                      <a href="javascript:;" class="product__link">
+                      <a class="product__link" href="#" onclick="return false;">
                         <div class="product__img">
                           <img
                             src="/assets/images/event/product_01.png"
                             alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                            loading="lazy"
                           />
-                          <button type="button" class="product__btn-cart">
+                          <button class="product__btn-cart" type="button">
                             <span class="visually-hidden">장바구니</span>
                           </button>
                         </div>
@@ -770,13 +812,14 @@
                       </a>
                     </li>
                     <li class="product__item">
-                      <a href="javascript:;" class="product__link">
+                      <a class="product__link" href="#" onclick="return false;">
                         <div class="product__img">
                           <img
                             src="/assets/images/event/product_01.png"
                             alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                            loading="lazy"
                           />
-                          <button type="button" class="product__btn-cart">
+                          <button class="product__btn-cart" type="button">
                             <span class="visually-hidden">장바구니</span>
                           </button>
                         </div>
@@ -796,13 +839,14 @@
                       </a>
                     </li>
                     <li class="product__item">
-                      <a href="javascript:;" class="product__link">
+                      <a class="product__link" href="#" onclick="return false;">
                         <div class="product__img">
                           <img
                             src="/assets/images/event/product_02.png"
                             alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                            loading="lazy"
                           />
-                          <button type="button" class="product__btn-cart">
+                          <button class="product__btn-cart" type="button">
                             <span class="visually-hidden">장바구니</span>
                           </button>
                         </div>
@@ -822,13 +866,14 @@
                       </a>
                     </li>
                     <li class="product__item">
-                      <a href="javascript:;" class="product__link">
+                      <a class="product__link" href="#" onclick="return false;">
                         <div class="product__img">
                           <img
                             src="/assets/images/event/product_03.png"
                             alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                            loading="lazy"
                           />
-                          <button type="button" class="product__btn-cart">
+                          <button class="product__btn-cart" type="button">
                             <span class="visually-hidden">장바구니</span>
                           </button>
                         </div>
@@ -848,13 +893,14 @@
                       </a>
                     </li>
                     <li class="product__item">
-                      <a href="javascript:;" class="product__link">
+                      <a class="product__link" href="#" onclick="return false;">
                         <div class="product__img">
                           <img
                             src="/assets/images/event/product_01.png"
                             alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                            loading="lazy"
                           />
-                          <button type="button" class="product__btn-cart">
+                          <button class="product__btn-cart" type="button">
                             <span class="visually-hidden">장바구니</span>
                           </button>
                         </div>
@@ -881,13 +927,13 @@
         </section>
 
         <!-- 전체상품 -->
-        <section id="section3" class="section section--product">
+        <section class="section section--product" id="section3">
           <!-- 상품 필터 -->
           <div class="product-filter">
             <div class="product-filter__section product-filter__section--left">
               <button
-                type="button"
                 class="product-filter__filter-btn pc-only"
+                type="button"
                 aria-expanded="false"
                 aria-controls="product-filter-details"
               >
@@ -907,8 +953,8 @@
                     <span class="toggle-switch__text pc-only">품절제외</span>
                     <span class="toggle-switch__text mobile-only">품절</span>
                     <input
-                      id="toggle1"
                       class="toggle-switch__input"
+                      id="toggle1"
                       type="checkbox"
                     />
                     <span class="toggle-switch__slider"></span>
@@ -919,9 +965,9 @@
               <div class="product-filter__option product-filter__option--sort">
                 <div class="product-filter__select">
                   <select
-                    name="option1"
-                    id="option1"
                     class="product-filter__dropdown"
+                    id="option1"
+                    name="option1"
                   >
                     <option value="best">베스트순</option>
                     <option value="new">신상품순</option>
@@ -941,8 +987,8 @@
 
               <!-- 모바일 전용 -->
               <button
-                type="button"
                 class="product-filter__filter-btn mobile-only"
+                type="button"
               >
                 <span class="visually-hidden">FILTER</span>
               </button>
@@ -953,13 +999,14 @@
           <div class="product product--list">
             <ul class="product__list">
               <li class="product__item">
-                <a href="javascript:;" class="product__link">
+                <a class="product__link" href="#" onclick="return false;">
                   <div class="product__img">
                     <img
                       src="/assets/images/event/product_01.png"
                       alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                      loading="lazy"
                     />
-                    <button type="button" class="product__btn-cart">
+                    <button class="product__btn-cart" type="button">
                       <span class="visually-hidden">장바구니</span>
                     </button>
                   </div>
@@ -979,13 +1026,14 @@
                 </a>
               </li>
               <li class="product__item">
-                <a href="javascript:;" class="product__link">
+                <a class="product__link" href="#" onclick="return false;">
                   <div class="product__img">
                     <img
                       src="/assets/images/event/product_02.png"
                       alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                      loading="lazy"
                     />
-                    <button type="button" class="product__btn-cart">
+                    <button class="product__btn-cart" type="button">
                       <span class="visually-hidden">장바구니</span>
                     </button>
                   </div>
@@ -1005,13 +1053,14 @@
                 </a>
               </li>
               <li class="product__item">
-                <a href="javascript:;" class="product__link">
+                <a class="product__link" href="#" onclick="return false;">
                   <div class="product__img">
                     <img
                       src="/assets/images/event/product_03.png"
                       alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                      loading="lazy"
                     />
-                    <button type="button" class="product__btn-cart">
+                    <button class="product__btn-cart" type="button">
                       <span class="visually-hidden">장바구니</span>
                     </button>
                   </div>
@@ -1031,13 +1080,14 @@
                 </a>
               </li>
               <li class="product__item">
-                <a href="javascript:;" class="product__link">
+                <a class="product__link" href="#" onclick="return false;">
                   <div class="product__img">
                     <img
                       src="/assets/images/event/product_01.png"
                       alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                      loading="lazy"
                     />
-                    <button type="button" class="product__btn-cart">
+                    <button class="product__btn-cart" type="button">
                       <span class="visually-hidden">장바구니</span>
                     </button>
                   </div>
@@ -1057,13 +1107,14 @@
                 </a>
               </li>
               <li class="product__item">
-                <a href="javascript:;" class="product__link">
+                <a class="product__link" href="#" onclick="return false;">
                   <div class="product__img">
                     <img
                       src="/assets/images/event/product_01.png"
                       alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                      loading="lazy"
                     />
-                    <button type="button" class="product__btn-cart">
+                    <button class="product__btn-cart" type="button">
                       <span class="visually-hidden">장바구니</span>
                     </button>
                   </div>
@@ -1083,13 +1134,14 @@
                 </a>
               </li>
               <li class="product__item">
-                <a href="javascript:;" class="product__link">
+                <a class="product__link" href="#" onclick="return false;">
                   <div class="product__img">
                     <img
                       src="/assets/images/event/product_02.png"
                       alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                      loading="lazy"
                     />
-                    <button type="button" class="product__btn-cart">
+                    <button class="product__btn-cart" type="button">
                       <span class="visually-hidden">장바구니</span>
                     </button>
                   </div>
@@ -1109,13 +1161,14 @@
                 </a>
               </li>
               <li class="product__item">
-                <a href="javascript:;" class="product__link">
+                <a class="product__link" href="#" onclick="return false;">
                   <div class="product__img">
                     <img
                       src="/assets/images/event/product_03.png"
                       alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                      loading="lazy"
                     />
-                    <button type="button" class="product__btn-cart">
+                    <button class="product__btn-cart" type="button">
                       <span class="visually-hidden">장바구니</span>
                     </button>
                   </div>
@@ -1135,13 +1188,14 @@
                 </a>
               </li>
               <li class="product__item">
-                <a href="javascript:;" class="product__link">
+                <a class="product__link" href="#" onclick="return false;">
                   <div class="product__img">
                     <img
                       src="/assets/images/event/product_01.png"
                       alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                      loading="lazy"
                     />
-                    <button type="button" class="product__btn-cart">
+                    <button class="product__btn-cart" type="button">
                       <span class="visually-hidden">장바구니</span>
                     </button>
                   </div>
@@ -1161,13 +1215,14 @@
                 </a>
               </li>
               <li class="product__item">
-                <a href="javascript:;" class="product__link">
+                <a class="product__link" href="#" onclick="return false;">
                   <div class="product__img">
                     <img
                       src="/assets/images/event/product_01.png"
                       alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                      loading="lazy"
                     />
-                    <button type="button" class="product__btn-cart">
+                    <button class="product__btn-cart" type="button">
                       <span class="visually-hidden">장바구니</span>
                     </button>
                   </div>
@@ -1187,13 +1242,14 @@
                 </a>
               </li>
               <li class="product__item">
-                <a href="javascript:;" class="product__link">
+                <a class="product__link" href="#" onclick="return false;">
                   <div class="product__img">
                     <img
                       src="/assets/images/event/product_02.png"
                       alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                      loading="lazy"
                     />
-                    <button type="button" class="product__btn-cart">
+                    <button class="product__btn-cart" type="button">
                       <span class="visually-hidden">장바구니</span>
                     </button>
                   </div>
@@ -1213,13 +1269,14 @@
                 </a>
               </li>
               <li class="product__item">
-                <a href="javascript:;" class="product__link">
+                <a class="product__link" href="#" onclick="return false;">
                   <div class="product__img">
                     <img
                       src="/assets/images/event/product_03.png"
                       alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                      loading="lazy"
                     />
-                    <button type="button" class="product__btn-cart">
+                    <button class="product__btn-cart" type="button">
                       <span class="visually-hidden">장바구니</span>
                     </button>
                   </div>
@@ -1239,13 +1296,14 @@
                 </a>
               </li>
               <li class="product__item">
-                <a href="javascript:;" class="product__link">
+                <a class="product__link" href="#" onclick="return false;">
                   <div class="product__img">
                     <img
                       src="/assets/images/event/product_01.png"
                       alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                      loading="lazy"
                     />
-                    <button type="button" class="product__btn-cart">
+                    <button class="product__btn-cart" type="button">
                       <span class="visually-hidden">장바구니</span>
                     </button>
                   </div>
@@ -1265,13 +1323,14 @@
                 </a>
               </li>
               <li class="product__item">
-                <a href="javascript:;" class="product__link">
+                <a class="product__link" href="#" onclick="return false;">
                   <div class="product__img">
                     <img
                       src="/assets/images/event/product_01.png"
                       alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                      loading="lazy"
                     />
-                    <button type="button" class="product__btn-cart">
+                    <button class="product__btn-cart" type="button">
                       <span class="visually-hidden">장바구니</span>
                     </button>
                   </div>
@@ -1291,13 +1350,14 @@
                 </a>
               </li>
               <li class="product__item">
-                <a href="javascript:;" class="product__link">
+                <a class="product__link" href="#" onclick="return false;">
                   <div class="product__img">
                     <img
                       src="/assets/images/event/product_02.png"
                       alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                      loading="lazy"
                     />
-                    <button type="button" class="product__btn-cart">
+                    <button class="product__btn-cart" type="button">
                       <span class="visually-hidden">장바구니</span>
                     </button>
                   </div>
@@ -1317,13 +1377,14 @@
                 </a>
               </li>
               <li class="product__item">
-                <a href="javascript:;" class="product__link">
+                <a class="product__link" href="#" onclick="return false;">
                   <div class="product__img">
                     <img
                       src="/assets/images/event/product_03.png"
                       alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                      loading="lazy"
                     />
-                    <button type="button" class="product__btn-cart">
+                    <button class="product__btn-cart" type="button">
                       <span class="visually-hidden">장바구니</span>
                     </button>
                   </div>
@@ -1343,13 +1404,14 @@
                 </a>
               </li>
               <li class="product__item">
-                <a href="javascript:;" class="product__link">
+                <a class="product__link" href="#" onclick="return false;">
                   <div class="product__img">
                     <img
                       src="/assets/images/event/product_01.png"
                       alt="바비브라운 인텐시브 세럼 파운데이션 SPF 40 #Porcelain"
+                      loading="lazy"
                     />
-                    <button type="button" class="product__btn-cart">
+                    <button class="product__btn-cart" type="button">
                       <span class="visually-hidden">장바구니</span>
                     </button>
                   </div>
@@ -1380,25 +1442,27 @@
         <div class="footer__section-inner">
           <ul class="footer__policy">
             <li class="footer__policy-item">
-              <a href="javascript:;">현대백화점소개</a>
+              <a href="#" onclick="return false;">현대백화점소개</a>
             </li>
             <li class="footer__policy-item">
-              <a href="javascript:;">입점/제휴</a>
+              <a href="#" onclick="return false;">입점/제휴</a>
             </li>
             <li class="footer__policy-item">
-              <a href="javascript:;">이용약관</a>
+              <a href="#" onclick="return false;">이용약관</a>
             </li>
             <li class="footer__policy-item">
-              <a href="javascript:;">개인정보처리방침</a>
+              <a href="#" onclick="return false;">개인정보처리방침</a>
             </li>
             <li class="footer__policy-item">
-              <a href="javascript:;">영상정보처리기기 운영/관리방침</a>
+              <a href="#" onclick="return false;">
+                영상정보처리기기 운영/관리방침
+              </a>
             </li>
             <li class="footer__policy-item">
-              <a href="javascript:;">이메일무단수집거부</a>
+              <a href="#" onclick="return false;">이메일무단수집거부</a>
             </li>
             <li class="footer__policy-item">
-              <a href="javascript:;">패밀리사이트</a>
+              <a href="#" onclick="return false;">패밀리사이트</a>
             </li>
           </ul>
           <div class="footer__familysite">
@@ -1407,29 +1471,49 @@
               <strong>쇼핑몰 사이트</strong>
               <ul>
                 <li>
-                  <a href="http://www.hyundaihmall.com/" target="_blank"
-                    >현대Hmall</a
+                  <a
+                    href="http://www.hyundaihmall.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
+                    현대Hmall
+                  </a>
                 </li>
                 <li>
-                  <a href="http://www.thehyundai.com/" target="_blank"
-                    >더현대닷컴</a
+                  <a
+                    href="http://www.thehyundai.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
+                    더현대닷컴
+                  </a>
                 </li>
                 <li>
-                  <a href="http://www.thehandsome.com/" target="_blank"
-                    >더한섬</a
+                  <a
+                    href="http://www.thehandsome.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
+                    더한섬
+                  </a>
                 </li>
                 <li>
-                  <a href="http://mall.hyundailivart.co.kr/" target="_blank"
-                    >현대리바트몰</a
+                  <a
+                    href="http://mall.hyundailivart.co.kr/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
+                    현대리바트몰
+                  </a>
                 </li>
                 <li>
-                  <a href="http://www.hfashionmall.com/" target="_blank"
-                    >H패션몰</a
+                  <a
+                    href="http://www.hfashionmall.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
+                    H패션몰
+                  </a>
                 </li>
               </ul>
               <strong>관계사 사이트</strong>
@@ -1438,52 +1522,82 @@
                   <a
                     href="http://www.ehyundai.com/newPortal/ir/main.do"
                     target="_blank"
-                    >현대백화점그룹</a
+                    rel="noopener noreferrer"
                   >
+                    현대백화점그룹
+                  </a>
                 </li>
                 <li>
                   <a
                     href="https://www.ehyundai.com/newPortal/index.do"
                     target="_blank"
-                    >현대백화점</a
+                    rel="noopener noreferrer"
                   >
+                    현대백화점
+                  </a>
                 </li>
                 <li>
-                  <a href="https://www.hyundaihmall.com/" target="_blank"
-                    >현대홈쇼핑</a
+                  <a
+                    href="https://www.hyundaihmall.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
+                    현대홈쇼핑
+                  </a>
                 </li>
                 <li>
-                  <a href="https://hyundaigreenfood.com/" target="_blank"
-                    >현대그린푸드</a
+                  <a
+                    href="https://hyundaigreenfood.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
+                    현대그린푸드
+                  </a>
                 </li>
                 <li>
-                  <a href="http://www.hyundaicatering.co.kr/" target="_blank"
-                    >현대캐터링시스템</a
+                  <a
+                    href="http://www.hyundaicatering.co.kr/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
+                    현대캐터링시스템
+                  </a>
                 </li>
                 <li>
-                  <a href="http://www.cnsfoodsystem.co.kr/" target="_blank"
-                    >C&amp;S푸드시스템</a
+                  <a
+                    href="http://www.cnsfoodsystem.co.kr/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
+                    C&amp;S푸드시스템
+                  </a>
                 </li>
                 <li>
                   <a
                     href="https://www.handsome.co.kr/ko/main.do"
                     target="_blank"
-                    >한섬</a
+                    rel="noopener noreferrer"
                   >
+                    한섬
+                  </a>
                 </li>
                 <li>
-                  <a href="https://www.hyundailivart.co.kr/" target="_blank"
-                    >현대리바트</a
+                  <a
+                    href="https://www.hyundailivart.co.kr/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
+                    현대리바트
+                  </a>
                 </li>
                 <li>
-                  <a href="http://www.hyundailnc.com/" target="_blank"
-                    >현대L&amp;C</a
+                  <a
+                    href="http://www.hyundailnc.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
+                    현대L&amp;C
+                  </a>
                 </li>
               </ul>
             </div>
@@ -1493,10 +1607,11 @@
       <div class="footer__section footer__section--bottom">
         <div class="footer__section-left">
           <div class="footer__logo">
-            <a href="javascript:;" class="footer__logo-link">
+            <a class="footer__logo-link" href="#" onclick="return false;">
               <img
                 src="/assets/images/logo_footer.png"
                 alt="HYUNDAI DUTY FREE"
+                loading="lazy"
               />
             </a>
           </div>
@@ -1516,10 +1631,12 @@
               </dl>
             </div>
             <div class="footer__btn-group">
-              <a href="javascript:;" class="footer__btn">사업자정보확인</a>
-              <a href="javascript:;" class="footer__btn"
-                >판매자별 사업자 정보</a
-              >
+              <a class="footer__btn" href="#" onclick="return false;">
+                사업자정보확인
+              </a>
+              <a class="footer__btn" href="#" onclick="return false;">
+                판매자별 사업자 정보
+              </a>
             </div>
           </div>
           <div class="footer__details">
@@ -1547,61 +1664,73 @@
             </dl>
           </div>
           <p class="footer__copyright">
-            COPYRIGHT © HYUNDAI DF Co,. Ltd. ALL RIGHTS RESERVED.
+            COPYRIGHT &#169; HYUNDAI DF Co,. Ltd. ALL RIGHTS RESERVED.
           </p>
           <div class="footer__sns">
             <a
-              href="javascript:;"
               class="footer__sns-link footer__sns-link--facebook"
+              href="#"
+              onclick="return false;"
               aria-label="페이스북"
             >
-              <span class="visually-hidden">facebook</span></a
-            >
+              <span class="visually-hidden">facebook</span>
+            </a>
             <a
-              href="javascript:;"
               class="footer__sns-link footer__sns-link--instagram"
+              href="#"
+              onclick="return false;"
               aria-label="인스타그램"
-              ><span class="visually-hidden">instagram</span></a
             >
+              <span class="visually-hidden">instagram</span>
+            </a>
           </div>
         </div>
 
         <div class="footer__section-right">
           <div class="footer__cert">
-            <strong
-              >주식회사 케이에스넷 구매안전(에스크로) 서비스 가맹점</strong
-            >
+            <strong>
+              주식회사 케이에스넷 구매안전(에스크로) 서비스 가맹점
+            </strong>
             <p>
               안전한 전자상거래를 위해 ㈜ 케이에스넷의 구매안전(에스크로)
-              서비스에<br />
-              가입하여, 구매안전(에스크로) 서비스를 제공하고 있습니다.<br />
-              주식회사 케이에스넷 금융감독원 결제대금예치업<br />
+              서비스에
+              <br />
+              가입하여, 구매안전(에스크로) 서비스를 제공하고 있습니다.
+              <br />
+              주식회사 케이에스넷 금융감독원 결제대금예치업
+              <br />
               등록번호 : 02-006-00002
             </p>
-            <a href="javascript:;" class="footer__btn">가입확인하기</a>
+            <a class="footer__btn" href="#" onclick="return false;">
+              가입확인하기
+            </a>
           </div>
           <ul class="footer__prize">
             <li>
-              <a href="javascript:;">
-                인증범위 : ㈜현대디에프 면세점 서비스 운영<br />
+              <a href="#" onclick="return false;">
+                인증범위 : ㈜현대디에프 면세점 서비스 운영
+                <br />
                 유효기간 : 2022.11.27~2025.11.26
               </a>
             </li>
             <li>
-              <a href="javascript:;">
-                개인정보보호 우수 웹사이트<br />
+              <a href="#" onclick="return false;">
+                개인정보보호 우수 웹사이트
+                <br />
                 인증/유효기간 : 2024.12.01~2027.11.30
               </a>
             </li>
             <li>
-              <a href="javascript:;">
-                스마트앱어워드 2021<br />
+              <a href="#" onclick="return false;">
+                스마트앱어워드 2021
+                <br />
                 디자인 이노베이션 대상
               </a>
             </li>
             <li>
-              <a href="javascript:;">
-                소비자중심경영 기업 인증<br />
+              <a href="#" onclick="return false;">
+                소비자중심경영 기업 인증
+                <br />
                 유효기간: 2024.01.01~2026.12.31
               </a>
             </li>
@@ -1615,16 +1744,16 @@
       <div class="footer__section footer__section--top">
         <ul class="footer__business-list">
           <li class="footer__business-item">
-            <a href="javascript:;">지점안내</a>
+            <a href="#" onclick="return false;">지점안내</a>
           </li>
           <li class="footer__business-item">
-            <a href="javascript:;">인도장안내</a>
+            <a href="#" onclick="return false;">인도장안내</a>
           </li>
           <li class="footer__business-item">
-            <a href="javascript:;">고객센터</a>
+            <a href="#" onclick="return false;">고객센터</a>
           </li>
           <li class="footer__business-item">
-            <a href="javascript:;">입점/제휴</a>
+            <a href="#" onclick="return false;">입점/제휴</a>
           </li>
         </ul>
       </div>
@@ -1634,7 +1763,9 @@
           <div class="footer__link">
             <ul class="footer__link-list">
               <li class="footer__link-item">
-                <a href="javascript:;" class="footer__link-btn">H.Point</a>
+                <a class="footer__link-btn" href="#" onclick="return false;">
+                  H.Point
+                </a>
               </li>
               <li class="footer__link-item footer__accordion">
                 <button class="footer__accordion-toggle">Family Site</button>
@@ -1645,19 +1776,54 @@
                     <p class="footer__accordion-title">쇼핑몰 사이트</p>
                     <ul class="footer__accordion-list">
                       <li class="footer__accordion-item">
-                        <a href="javascript:;" target="_blank">현대Hmall</a>
+                        <a
+                          href="#"
+                          onclick="return false;"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          현대Hmall
+                        </a>
                       </li>
                       <li class="footer__accordion-item">
-                        <a href="javascript:;" target="_blank">더현대닷컴</a>
+                        <a
+                          href="#"
+                          onclick="return false;"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          더현대닷컴
+                        </a>
                       </li>
                       <li class="footer__accordion-item">
-                        <a href="javascript:;" target="_blank">더한섬</a>
+                        <a
+                          href="#"
+                          onclick="return false;"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          더한섬
+                        </a>
                       </li>
                       <li class="footer__accordion-item">
-                        <a href="javascript:;" target="_blank">현대리바트몰</a>
+                        <a
+                          href="#"
+                          onclick="return false;"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          현대리바트몰
+                        </a>
                       </li>
                       <li class="footer__accordion-item">
-                        <a href="javascript:;" target="_blank">H패션몰</a>
+                        <a
+                          href="#"
+                          onclick="return false;"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          H패션몰
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -1667,23 +1833,54 @@
                     <p class="footer__accordion-title">관계사 사이트</p>
                     <ul class="footer__accordion-list">
                       <li class="footer__accordion-item">
-                        <a href="javascript:;" target="_blank"
-                          >현대백화점그룹</a
+                        <a
+                          href="#"
+                          onclick="return false;"
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
+                          현대백화점그룹
+                        </a>
                       </li>
                       <li class="footer__accordion-item">
-                        <a href="javascript:;" target="_blank">현대백화점</a>
-                      </li>
-                      <li class="footer__accordion-item">
-                        <a href="javascript:;" target="_blank">현대홈쇼핑</a>
-                      </li>
-                      <li class="footer__accordion-item">
-                        <a href="javascript:;" target="_blank">현대그린푸드</a>
-                      </li>
-                      <li class="footer__accordion-item">
-                        <a href="javascript:;" target="_blank"
-                          >현대캐터링시스템</a
+                        <a
+                          href="#"
+                          onclick="return false;"
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
+                          현대백화점
+                        </a>
+                      </li>
+                      <li class="footer__accordion-item">
+                        <a
+                          href="#"
+                          onclick="return false;"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          현대홈쇼핑
+                        </a>
+                      </li>
+                      <li class="footer__accordion-item">
+                        <a
+                          href="#"
+                          onclick="return false;"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          현대그린푸드
+                        </a>
+                      </li>
+                      <li class="footer__accordion-item">
+                        <a
+                          href="#"
+                          onclick="return false;"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          현대캐터링시스템
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -1700,53 +1897,66 @@
         <div class="footer__group">
           <div class="footer__global">
             <div class="footer__utility">
-              <a href="javascript:;" class="footer__utility-item">PC버전</a>
-              <a href="javascript:;" class="footer__utility-item">中文网</a>
-              <a href="javascript:;" class="footer__utility-item">English</a>
+              <a class="footer__utility-item" href="#" onclick="return false;">
+                PC버전
+              </a>
+              <a class="footer__utility-item" href="#" onclick="return false;">
+                中文网
+              </a>
+              <a class="footer__utility-item" href="#" onclick="return false;">
+                English
+              </a>
             </div>
             <div class="footer__exchange">
-              환율 <strong>$1 = ￦1,358.9</strong>
+              환율
+              <strong>$1 = ￦1,358.9</strong>
             </div>
           </div>
         </div>
 
         <div class="footer__group">
           <div class="footer__policy">
-            <a href="javascript:;" class="footer__policy-item">이용약관</a>
-            <a href="javascript:;" class="footer__policy-item"
-              ><strong>개인정보처리방침</strong></a
-            >
-            <a href="javascript:;" class="footer__policy-item"
-              >영상정보 처리기기/관리방침</a
-            >
+            <a class="footer__policy-item" href="#" onclick="return false;">
+              이용약관
+            </a>
+            <a class="footer__policy-item" href="#" onclick="return false;">
+              <strong>개인정보처리방침</strong>
+            </a>
+            <a class="footer__policy-item" href="#" onclick="return false;">
+              영상정보 처리기기/관리방침
+            </a>
           </div>
 
           <p class="footer__copyright">
-            COPYRIGHT © HYUNDAI DF Co,. Ltd. ALL RIGHTS RESERVED.
+            COPYRIGHT &#169; HYUNDAI DF Co,. Ltd. ALL RIGHTS RESERVED.
           </p>
 
           <ul class="footer__prize">
             <li>
-              <a href="javascript:;">
-                인증범위 : ㈜현대디에프 면세점 서비스 운영<br />
+              <a href="#" onclick="return false;">
+                인증범위 : ㈜현대디에프 면세점 서비스 운영
+                <br />
                 유효기간 : 2022.11.27~2025.11.26
               </a>
             </li>
             <li>
-              <a href="javascript:;">
-                개인정보보호 우수 웹사이트<br />
+              <a href="#" onclick="return false;">
+                개인정보보호 우수 웹사이트
+                <br />
                 인증/유효기간 : 2024.12.01~2027.11.30
               </a>
             </li>
             <li>
-              <a href="javascript:;">
-                스마트앱어워드 2021<br />
+              <a href="#" onclick="return false;">
+                스마트앱어워드 2021
+                <br />
                 디자인 이노베이션 대상
               </a>
             </li>
             <li>
-              <a href="javascript:;">
-                소비자중심경영 기업 인증<br />
+              <a href="#" onclick="return false;">
+                소비자중심경영 기업 인증
+                <br />
                 유효기간: 2024.01.01~2026.12.31
               </a>
             </li>
@@ -1764,8 +1974,8 @@
           <!-- 검색 영역 - 뒤로가기+검색 -->
           <div class="popup__search">
             <button
-              type="button"
               class="popup__btn-back"
+              type="button"
               data-action="popup-close:event"
             >
               <span class="visually-hidden">뒤로 가기</span>
@@ -1777,7 +1987,7 @@
                 <div class="popup__search-input">
                   <input type="text" placeholder="브랜드명으로 검색해보세요" />
                 </div>
-                <button type="submit" class="popup__btn-search">
+                <button class="popup__btn-search" type="submit">
                   <span class="visually-hidden">검색</span>
                 </button>
               </fieldset>

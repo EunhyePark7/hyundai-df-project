@@ -7,15 +7,7 @@ import 'swiper/css/navigation';
 // init swiper
 export const initSwiper = () => {
   document.addEventListener('DOMContentLoaded', () => {
-    const swiperEl = document.querySelector('.product--slide.swiper');
-    console.log('swiperEl:', swiperEl);
-
-    if (!swiperEl) {
-      console.error('Swiper 요소를 찾을 수 없습니다!');
-      return;
-    }
-
-    const swiper = new Swiper('.test-swiper', {
+    const swiper = new Swiper('.product.swiper', {
       loop: true,
       modules: [Navigation, Autoplay],
       autoplay: {
