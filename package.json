@@ -17,6 +17,9 @@
     "iOS >= 12",
     "Edge >= 90"
   ],
+  "dependencies": {
+    "swiper": "^11.2.8"
+  },
   "devDependencies": {
     "@vitejs/plugin-legacy": "^6.1.1",
     "autoprefixer": "^10.4.14",
@@ -28,10 +31,13 @@
     "glob": "^11.0.2",
     "postcss": "^8.4.27",
     "postcss-custom-media": "^8.0.1",
-    "prettier": "^3.0.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-organize-attributes": "^1.0.0",
     "sass": "^1.66.1",
-    "swiper": "^9.3.2",
     "vite": "^6.3.5",
     "vite-jsconfig-paths": "^2.0.1"
+  },
+  "engines": {
+    "node": "20.3.0"
   }
 }
