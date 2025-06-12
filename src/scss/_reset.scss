@@ -142,3 +142,14 @@ body.is-locked {
   overflow: hidden;
   touch-action: none;
 }
+.pc-only {
+  @include respond-mobile {
+    display: none !important;
+  }
+}
+.mobile-only {
+  display: none !important;
+  @include respond-mobile {
+    display: inline-flex !important;
+  }
+}

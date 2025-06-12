@@ -29,3 +29,54 @@ $point-visual-4: #d6ceeb;
 $point-label-4: #7f519c;
 
 $breakpoint-mobile: 1130px;
+
+.event[data-theme='type1-a'] {
+  .event__head {
+    background-color: $point-visual-1;
+  }
+  .section__label {
+    background-color: $point-label-1;
+  }
+  .benefit__label {
+    background-color: $point-item-label-1;
+  }
+  .benefit__item {
+    background-color: $point-background-1;
+  }
+  .benefit__detail {
+    color: $point-font-1;
+  }
+}
+.event[data-theme='type1-b'] {
+  .event__head {
+    background-color: $point-visual-2;
+  }
+  .section__label {
+    background-color: $point-label-2;
+  }
+  .benefit__label {
+    background-color: $point-item-label-2;
+  }
+  .benefit__item {
+    background-color: $point-background-2;
+  }
+  .benefit__detail {
+    color: $point-font-1;
+  }
+}
+.event[data-theme='type2-a'] {
+  .event__head {
+    background-color: $point-visual-3;
+  }
+  .section__label {
+    background-color: $point-label-3;
+  }
+}
+.event[data-theme='type2-b'] {
+  .event__head {
+    background-color: $point-visual-4;
+  }
+  .section__label {
+    background-color: $point-label-4;
+  }
+}

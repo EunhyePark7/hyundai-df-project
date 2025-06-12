@@ -7,11 +7,12 @@ export const initSection = () => {
     document.querySelectorAll('[data-scroll-section]')
   );
 
-  // 현재 화면 중앙에 노출되는 섹션을 찾아서 네비아이템 활성화
+  let lastKnownSection = sections[0]?.getAttribute('data-scroll-section'); // 처음엔 첫 섹션으로 초기화
+
+  // 현재 화면에 노출되는 섹션 - 네비아이템 활성화
   const setActiveNav = () => {
     let current = null;
 
-    // 섹션별 위치 계산: 뷰포트 중앙 영역에 걸쳐있는 섹션 찾기
     sections.forEach((section) => {
       const rect = section.getBoundingClientRect();
       if (
@@ -22,7 +23,20 @@ export const initSection = () => {
       }
     });
 
-    // 네비아이템에 활성화 클래스 토글
+    // 첫 진입 시 기본 섹션 활성화
+    if (!current && sections.length > 0) {
+      current = sections[0].getAttribute('data-scroll-section');
+    }
+
+    // 마지막 섹션 지나면 마지막 섹션 유지
+    const lastSection = sections[sections.length - 1];
+    const lastRect = lastSection.getBoundingClientRect();
+    const bottomThreshold = 50;
+    if (lastRect.bottom < window.innerHeight + bottomThreshold) {
+      current = lastSection.getAttribute('data-scroll-section');
+    }
+
+    // 네비아이템 활성 클래스 토글
     navItems.forEach((item) => {
       const target = item.getAttribute('data-nav-target');
       item.classList.toggle('section-nav__item--active', target === current);
@@ -41,8 +55,22 @@ export const initSection = () => {
       const targetSection = document.querySelector(
         `[data-scroll-section="${targetId}"]`
       );
+
+      // 반응형 대응 - 헤더값 적용
       if (targetSection) {
-        targetSection.scrollIntoView({ behavior: 'smooth' });
+        let yOffset;
+        if (window.innerWidth <= 1130) {
+          yOffset = -120 - 20;
+        } else {
+          yOffset = -165 - 30;
+        }
+
+        const y =
+          targetSection.getBoundingClientRect().top +
+          window.pageYOffset +
+          yOffset;
+
+        window.scrollTo({ top: y, behavior: 'smooth' });
       }
     });
   });

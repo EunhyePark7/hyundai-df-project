@@ -1,4 +1,4 @@
-// 유틸 함수: 팝업 열기
+// 팝업 열기
 const openPopup = (name) => {
   const popup = document.querySelector(`[data-popup="${name}"]`);
   if (!popup) return;
@@ -14,7 +14,8 @@ const openPopup = (name) => {
     focusable.focus();
   }
 };
-// 유틸 함수: 팝업 닫기
+
+// 팝업 닫기
 const closePopup = (name) => {
   const popup = document.querySelector(`[data-popup="${name}"]`);
   if (!popup) return;
